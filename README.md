@@ -21,6 +21,9 @@ docker rm -f [conteneur]
 # Arrêter un conteneur
 docker stop [conteneur]
 
+# Redémarre un conteneur
+docker start 
+
 # Construire un image à partir d'un Dockerfile
 docker build -t [image]
 
@@ -59,3 +62,9 @@ docker network create [reseau]
 
 # Supprimer un réseau
 docker network rm [reseau]
+
+# Supprimer les conteneurs, réseaux, images inutilisés
+docker system prune
+
+# Nettoyer uniquement les images non utilisées
+docker image prune
