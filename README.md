@@ -1,5 +1,5 @@
 # Examen-Docker
-# Guide des Commandes Docker
+# Guide des Commandes de bases Docker
 
 Ce document regroupe les commandes Docker les plus utiles pour gérer des conteneurs, images, volumes, et réseaux.
 
@@ -41,3 +41,21 @@ docker pull [image]
 
 # Rechercher une image 
 docker search
+
+# Créer un volume
+docker volume create [volume]
+
+# Lister les volumes
+docker volume ls
+
+# Supprimer un volume
+docker volume rm [volume]
+
+# Lister les réseaux
+docker network ls
+
+# Créer un réseau
+docker network create [reseau]
+
+# Supprimer un réseau
+docker network rm [reseau]
