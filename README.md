@@ -68,3 +68,7 @@ docker system prune
 
 # Nettoyer uniquement les images non utilisées
 docker image prune
+
+# Vérifier l'espace disque utilisé
+docker system df
+
