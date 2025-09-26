@@ -39,6 +39,15 @@ docker run -it [image]
 # Lancer un conteneur en arrière-plan
 docker run -d [image]
 
+# Pour démarrer le service
+docker-compose up -d
+
+# Pour arrêter et supprimer les conteneurs
+docker-compose down
+
+# Démarrer avec reconstruction forcée
+docker-compose up --build -d
+
 # Récupérer une image 
 docker pull [image]
 
@@ -71,4 +80,20 @@ docker image prune
 
 # Vérifier l'espace disque utilisé
 docker system df
+
+# Pour arrêter seulement (sans supprimer)
+docker-compose stop
+
+# Redémarrer
+docker-compose restart
+
+# Voir la liste des service en cours
+docker-compose ps
+
+# Consulter les logs de tous les services
+docker-compose logs
+
+# Consulter les logs en temps réel
+docker-compose logs -f
+
 
