@@ -96,4 +96,17 @@ docker-compose logs
 # Consulter les logs en temps réel
 docker-compose logs -f
 
+# Logs d'un services spécifique
+docker-compose logs -f [service]
+
+# Excécuter une commande dans un service
+docker-compose exec [service] [commande]
+ Exemple : docker-compose exec db mysql -u root -p
+
+ # Entrer dans le Shell d'un service
+ docker-compose exec [service] bash
+
+
+
+
 
